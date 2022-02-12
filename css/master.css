@@ -129,10 +129,10 @@
         width: 90%;
     }
     .landing .welcome h2 {
-        font-size: 1rem;
+        font-size: 2rem;
     }
     .landing .welcome p {
-        font-size: 0.7rem;
+        font-size: 1rem;
     }
 }
 @media(max-width: 400px) {
