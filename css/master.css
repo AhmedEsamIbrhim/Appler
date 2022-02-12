@@ -1,0 +1,435 @@
+/* Import Fonts By Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+/*
+    Start Bootstrap Edit
+
+*/
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-collapse {
+        justify-content: end;
+    }
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #EEE;
+    transition:.5s;
+    font-size: 1.2rem;
+}
+.navbar-light .navbar-nav .nav-link.active {
+    color: #fff;
+}
+.navbar-light .navbar-nav .nav-link:hover, 
+.navbar-light .navbar-nav .nav-link:focus {
+    color: #fff;
+}
+@media(max-width: 992px) {
+    .navbar-collapse {
+        background: #4a1084;
+        z-index: 2;
+        padding: 15px;
+        border-radius: 3px;
+    }
+}
+
+
+/* End Bootstrap Edit*/
+/* start landing page*/
+.landing {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/test.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.overlay {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    background-color: #4e168f4a;
+}
+.landing .welcome {
+    width:5 0%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #fff;
+}
+.landing .welcome h2 {
+    font-size: 3rem;
+}
+.landing .welcome P {
+    font-size: 1.2rem;
+}
+.landing .welcome .action {
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    width:100%;
+}
+.landing .welcome svg {
+    border-radius: 50%;
+    border:1px solid #fff;
+    padding: 5px;
+    color: #4a1084;
+    background-color: #FFF;
+
+}
+.landing .welcome svg:hover {
+    border:1px solid #4a1084;
+    color: #fff;
+    background-color: #4a1084;
+}
+.landing .welcome .btn-action {
+    height:45px;
+    padding: 5px 15px;
+    background: transparent;
+    border-width: 1px  1px 1px 0;
+    border-style: solid;
+    border-color: #EEE;
+    color: #eee;
+    border-radius: 0 20px 20px 0;
+    font-weight: bold;
+    position: relative;
+    right:10px
+}
+.landing .welcome .btn-action:hover {
+    color:#4a1084;
+    border-color: #4a1084;
+}
+/* Start Navbar*/
+.navbar .logo {
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+    color:#EEE;
+    transition: 0.5s;
+    outline: none;
+}
+.navbar .logo:hover,
+.navbar .logo:focus {
+    color: #fff;
+}
+@media(max-width: 992px) {
+
+    .landing .welcome {
+        width: 80%;
+    }
+    .landing .welcome h2 {
+        font-size: 1.5rem;
+    }
+    .landing .welcome p {
+        font-size: 0.7rem;
+    }
+}
+@media(max-width: 576px) {
+    .landing .welcome {
+        width: 90%;
+    }
+    .landing .welcome h2 {
+        font-size: 1rem;
+    }
+    .landing .welcome p {
+        font-size: 0.7rem;
+    }
+}
+@media(max-width: 400px) {
+    .landing .welcome {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .landing .welcome h2 {
+        font-size: .8rem;
+    }
+    .landing .welcome p {
+        font-size: 0.4rem;
+    }
+}
+/* Start About Section*/
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.about .content {
+    width:80%;
+    margin: auto;
+}
+.about .content h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'arial';
+}
+.about .feat {
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .feat .con {
+    padding: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+.about .feat .con .icon {
+    margin-right: 20px;
+}
+.about .feat .con .icon svg {
+    fill:#4a1084;
+}
+.about .action {
+    text-align: center;
+    margin-top:55px;
+}
+.about .action .btn:focus {
+    outline: none;
+    border: none;
+}
+@media(max-width: 768px) {
+    .about .feat {
+        margin-top:50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content:center;
+    }
+
+}
+/* Start Features Section*/
+.features {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #4a1084d7;
+    color: #eEE;
+    position: relative;
+}
+.features::before {
+    content: "";
+    color: #4a1084;
+    border-width: 50px;
+    border-style: solid;
+    border-color: #FFF transparent transparent transparent;
+    width: 5px;
+    position: absolute;
+    right: 10px;
+    top: 0;
+}
+.features::after {
+    content: "";
+    color: #4a1084;
+    border-width: 50px;
+    border-style: solid;
+    border-color: #FFF transparent transparent transparent;
+    width: 5px;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+.features .fet {
+    background-color: #fff;
+    border:1px solid #EEE;
+    color: #333;
+    margin-bottom:20px;
+    border-radius: 10px;
+    padding: 15px;
+
+}
+.features .fet svg {
+    fill: #4a1084;
+}
+.features .fet h4 {
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.features .content h2 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+@media(max-width: 786px) {
+    .features .content p {
+        font-size: 1rem;
+    }
+}
+.features .content button {
+    padding: 10px 15px;
+    background-color: transparent;
+    border-color: #4a1084;
+    cursor: pointer;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.features .content button:hover {
+    color: #4a1084;
+    background-color: #fff;
+    border: 1px solid #4a1084;
+}
+/* End Features Section*/
+/* Start Testmonial Section*/
+.testmo {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.testmo h2 {
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}
+.testmo .tem {
+    margin-top: 70px;
+    border: 1px solid #4a108440;
+    box-shadow: 6px 11px 19px #ccc;
+    border-radius: 15px 0 15px 0;
+    padding: 15px;
+}
+.testmo .tem svg {
+    fill: #4a1084;
+    transform: rotate(180deg);
+}
+.testmo .tem p {
+    font-size: 1rem;
+}
+.testmo .tem .man-det {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.testmo .tem .man-det img {
+    width: 100px;
+}
+.testmo .tem .man-det h5 {
+    font-size: 1rem;
+    font-family: cursive;
+}
+/* End Testmonial Section*/
+/* Start Download Section*/
+.download {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
+    background-color: #4a1084;
+    color: #fff;
+
+}
+.download h2 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.download .dow {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 5px;
+    cursor: pointer;
+}
+.dow .svg {
+    border-style: solid;
+    border-width: 1px 0 1px 1px;
+    border-color: #fff;
+    padding: 10px;
+    border-radius: 30px  0 0 30px;
+}
+.dow .des {
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+    border-color: #fff;
+    padding: 10px;
+    border-radius:0 30px 30px 0  ;
+}
+.dow span {
+    display: block;
+    color: #EEE;
+    font-family: cursive;
+}
+/* End Download Section*/
+/* Start Pricing Section*/
+.pricing {
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.pricing .wel {
+    margin : 0 0 70px 0;
+}
+.pricing .wel h2 {
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+.pricing .wel p {
+    font-size: 1rem;
+}
+.pricing h3 {
+    padding: 5px 5px;
+
+}
+.pricing h3.basic    {
+    border-top: 5px solid #DDD ;
+}
+.pricing h3.pop    {
+    border-top: 5px solid #4a1084 ;
+}
+.pricing h3.ag {
+    border-top: 5px solid #c0392b ;
+}
+.pricing .price {
+
+    padding: 5px;
+    color: #333
+
+}
+.plan {
+    margin-bottom: 50px;
+}
+.plan .price h2 {
+    margin: 50px 0;
+}
+.pricing p {
+    padding: 5px;
+    font-family: cursive;
+    font-size: 1.3rem;
+}
+/* End Pricing Section*/
+/* Start Contact Us Section*/
+.contact {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #4a1084;
+    color: #FFF;
+}
+.contact .wel {
+    padding: 10px;
+    margin: 50px auto;
+}
+.contact form {
+    width: 50%;
+    margin: auto;
+}
+@media(max-width: 992px) {
+    .contact form {
+        width: 100%;
+    }
+}
+.contact form input,
+.contact form textarea {
+    margin: 10px auto;  
+}
+.contact form textarea {
+    height: 150px;
+    resize: none;
+}
+.contact form button {
+    padding:10px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+.contact form button:hover {
+    background-color: #fff;
+    border: 1px solid #4a1084;
+    color: #4a1084;
+}
+/* End Contact Us Section*/
