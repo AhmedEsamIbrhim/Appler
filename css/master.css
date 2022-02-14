@@ -1,10 +1,18 @@
 /* Import Fonts By Google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+/* Start Properties*/
+:root {
+    --main-color: #4a1084;
+}
 /*
     Start Bootstrap Edit
 
 */
+a {
+    color: #333;
+    text-decoration: none;
+}
 @media (min-width: 992px) {
     .navbar-expand-lg .navbar-collapse {
         justify-content: end;
@@ -14,6 +22,7 @@
     color: #EEE;
     transition:.5s;
     font-size: 1.2rem;
+    font-family: cursive;
 }
 .navbar-light .navbar-nav .nav-link.active {
     color: #fff;
@@ -24,7 +33,7 @@
 }
 @media(max-width: 992px) {
     .navbar-collapse {
-        background: #4a1084;
+        background: var(--main-color);
         z-index: 2;
         padding: 15px;
         border-radius: 3px;
@@ -74,14 +83,14 @@
     border-radius: 50%;
     border:1px solid #fff;
     padding: 5px;
-    color: #4a1084;
+    color: var(--main-color);
     background-color: #FFF;
 
 }
 .landing .welcome svg:hover {
-    border:1px solid #4a1084;
+    border:1px solid var(--main-color);
     color: #fff;
-    background-color: #4a1084;
+    background-color: var(--main-color);
 }
 .landing .welcome .btn-action {
     height:45px;
@@ -97,8 +106,40 @@
     right:10px
 }
 .landing .welcome .btn-action:hover {
-    color:#4a1084;
-    border-color: #4a1084;
+    color:var(--main-color);
+    border-color: var(--main-color);
+}
+.landing  .scroll-down {
+    position: absolute;
+    bottom:50px;
+    text-align: center;
+    width: 100%;
+
+}
+.landing  .scroll-down span {
+    font-size: 1.2rem;
+    background-color: #fff;
+    color: var(--main-color);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    display: block;
+    width:150px;
+    margin:auto;
+}
+.landing  .scroll-down span a {
+    color: var(--main-color);
+    font-family: cursive;
+}
+.landing  .scroll-down span:hover{
+    transform: translateY(40px);
+    color: #fff;
+    background-color: var(--main-color);
+}
+.landing  .scroll-down span:hover a {
+    color: #fff;
+    display: block;
 }
 /* Start Navbar*/
 .navbar .logo {
@@ -180,7 +221,10 @@
     margin-right: 20px;
 }
 .about .feat .con .icon svg {
-    fill:#4a1084;
+    fill:var(--main-color);
+}
+.about .feat .con span{
+    font-family: cursive;
 }
 .about .action {
     text-align: center;
@@ -204,13 +248,13 @@
 .features {
     padding-top: 70px;
     padding-bottom: 70px;
-    background-color: #4a1084d7;
+    background-color: var(--main-color);
     color: #eEE;
     position: relative;
 }
 .features::before {
     content: "";
-    color: #4a1084;
+    color: var(--main-color);
     border-width: 50px;
     border-style: solid;
     border-color: #FFF transparent transparent transparent;
@@ -221,7 +265,7 @@
 }
 .features::after {
     content: "";
-    color: #4a1084;
+    color: var(--main-color);
     border-width: 50px;
     border-style: solid;
     border-color: #FFF transparent transparent transparent;
@@ -245,7 +289,7 @@
     transform: scale(1.1);
 }
 .features .fet svg {
-    fill: #4a1084;
+    fill: var(--main-color);
 }
 .features .fet h4 {
     margin-top:10px;
@@ -264,15 +308,15 @@
 .features .content button {
     padding: 10px 15px;
     background-color: transparent;
-    border-color: #4a1084;
+    border-color: var(--main-color);
     cursor: pointer;
     border: 1px solid #fff;
     color: #fff;
 }
 .features .content button:hover {
-    color: #4a1084;
+    color: var(--main-color);
     background-color: #fff;
-    border: 1px solid #4a1084;
+    border: 1px solid var(--main-color);
 }
 /* End Features Section*/
 /* Start Testmonial Section*/
@@ -287,13 +331,13 @@
 }
 .testmo .tem {
     margin-top: 70px;
-    border: 1px solid #4a108440;
+    border: 1px solid var(--main-color)40;
     box-shadow: 6px 11px 19px #ccc;
     border-radius: 15px 0 15px 0;
     padding: 15px;
 }
 .testmo .tem svg {
-    fill: #4a1084;
+    fill: var(--main-color);
     transform: rotate(180deg);
 }
 .testmo .tem p {
@@ -317,7 +361,7 @@
     padding-top: 70px;
     padding-bottom: 70px;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 87%);
-    background-color: #4a1084;
+    background-color: var(--main-color);
     color: #fff;
 
 }
@@ -378,7 +422,7 @@
     border-top: 5px solid #DDD ;
 }
 .pricing h3.pop    {
-    border-top: 5px solid #4a1084 ;
+    border-top: 5px solid var(--main-color) ;
 }
 .pricing h3.ag {
     border-top: 5px solid #c0392b ;
@@ -405,7 +449,7 @@
 .contact {
     padding-top: 70px;
     padding-bottom: 70px;
-    background-color: #4a1084;
+    background-color: var(--main-color);
     color: #FFF;
 }
 .contact .wel {
@@ -429,6 +473,14 @@
     height: 150px;
     resize: none;
 }
+.contact form .msg-form {
+    display: none;
+    font-size: 1.2rem;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #fff;
+}
 .contact form button {
     padding:10px;
     background-color: transparent;
@@ -437,7 +489,7 @@
 }
 .contact form button:hover {
     background-color: #fff;
-    border: 1px solid #4a1084;
-    color: #4a1084;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
 }
 /* End Contact Us Section*/
