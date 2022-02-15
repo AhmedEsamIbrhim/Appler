@@ -42,6 +42,82 @@ a {
 
 
 /* End Bootstrap Edit*/
+/* Start Settings Box*/
+.settings-box {
+    width: 300px;
+    position: fixed;
+    left:-300px;
+    top:0;
+    background-color: #fff;
+    height:100%;
+    z-index: 2;
+    transition: 0.5s;
+    border-right: 1px solid rgba(204, 204, 204, 0.685)
+}
+.settings-box.open {
+    left:0;
+}
+.settings-box .gear {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: -50px;
+    padding: 10px;
+    background: #fff;
+    text-align: center;
+    font-weight: bold;
+    font-family: cursive;
+    top:30%;
+    cursor: pointer;
+    border-style: solid;
+    border-color: #CCC;
+    border-width: 1px 1px 1px 0px;
+}
+.settings-box .setting-body {
+    padding: 10px;
+}
+.settings-box .setting-body .colors{
+    padding: 5px;
+}
+.settings-box .setting-body .colors .colors-list {
+    list-style: none;
+    text-align: center;
+    margin-top: 15px;
+}
+.settings-box .setting-body .colors .colors-list li {
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.settings-box .setting-body .colors .colors-list li:first-of-type {
+    background-color: #4a1084;
+}
+.settings-box .setting-body .colors .colors-list li:nth-child(2) {
+    background-color: #e91e63
+}
+.settings-box .setting-body .colors .colors-list li:nth-child(3) {
+    background-color: #4caf50
+}
+.settings-box .setting-body .colors .colors-list li:nth-child(4) {
+    background-color: #673ab7
+}
+.settings-box .setting-body .colors .colors-list li:nth-child(5) {
+    background-color: #ff5722
+}
+.settings-box .setting-header {
+    background-color: var(--main-color);
+    color: #EEE;
+    padding: 10px;
+}
+.settings-box .setting-header h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: arial;
+    letter-spacing: 1px;
+}
 /* start landing page*/
 .landing {
     width: 100%;
@@ -111,7 +187,7 @@ a {
 }
 .landing  .scroll-down {
     position: absolute;
-    bottom:50px;
+    bottom:40px;
     text-align: center;
     width: 100%;
 
@@ -133,7 +209,7 @@ a {
     font-family: cursive;
 }
 .landing  .scroll-down span:hover{
-    transform: translateY(40px);
+    transform: translateY(25px);
     color: #fff;
     background-color: var(--main-color);
 }
